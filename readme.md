@@ -2,6 +2,10 @@
 
 This Application provides information from Bluesky using ATProto.
 
+## Announcements
+
+We are working to finalize v1 of the API, you may see changes as we update responses.
+
 ## Table of contents
 
 - [Usage](api.md)
