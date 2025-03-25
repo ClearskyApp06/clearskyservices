@@ -374,7 +374,7 @@ Authenticated endpoints:
 
 - **Endpoint:** `/api/v1/anon/subscribe-blocks-blocklist/<handle/did>` `/api/v1/anon/subscribe-blocks-blocklist/<handle/did>/<page:int>`
   - **Method:** `GET`
-    - **Description:** Get list of lists that a user is blocking
+    - **Description:** Get a list of lists that a user is blocking
       - **Parameters:** handle or did
         - **Response:**
             ```json
@@ -421,8 +421,33 @@ Authenticated endpoints:
                                 ],
                         }
                 }
-
+          
 ### 18.
+
+- **Endpoint:** `/api/v1/anon/subscribe-blocks-single-blocklist/users/<handle/did>` `/api/v1/anon/subscribe-blocks-single-blocklist/users/<handle/did>/<page:int>`
+  - **Method:** `GET`
+    - **Description:** Get the list of users that a user is blocked by based on list subscriptions
+      - **Parameters:** handle or did
+        - **Response:**
+            ```json
+                {
+                    "identity": str, 
+                    "data": 
+                        {
+                            "blocklist": 
+                                {
+                                    "users": 
+                                        [
+                                            {
+                                                "did": str,
+                                                "date_added": timestamp
+                                            }
+                                        ]
+                                }
+                        }
+                }
+
+### 19.
 
 - **Endpoint:** `/api/v1/anon/lists/dids-per-pds`
   - **Method:** `GET`
@@ -440,7 +465,7 @@ Authenticated endpoints:
                         ]
                 }
 
-### 19.
+### 20.
 
 - **Endpoint:** `/api/v1/anon/search/moderation-lists/<name:string>` `/api/v1/anon/search/moderation-lists/<name:string>/<page:int>`
   - **Method:** `GET`
@@ -466,7 +491,7 @@ Authenticated endpoints:
                       }
               }
       
-### 20.
+### 21.
 
 - **Endpoint:** `/api/v1/anon/get-handle-history/<handle/did>`
   - **Method:** `GET`
@@ -482,7 +507,7 @@ Authenticated endpoints:
                       }
               }
 
-### 21.
+### 22.
 
 - **Endpoint:** `/api/v1/anon/images/logo`
   - **Method:** `GET`
@@ -490,7 +515,7 @@ Authenticated endpoints:
     - **Parameters:** None
     - **Response:** png3
 
-### 22.
+### 23.
 
 - **Endpoint:** `/api/v1/anon/status/time-behind`
   - **Method:** `GET`
@@ -505,7 +530,7 @@ Authenticated endpoints:
                     }
             }
         
-### 23.
+### 24.
 - **Endpoint:** `/api/v1/anon/get-labelers` `/api/v1/anon/get-labelers/<page:int>`
   - **Method:** `GET`
     - **Description:** Get the active labelers
@@ -525,7 +550,7 @@ Authenticated endpoints:
                     ]
             }
         
-### 24.
+### 25.
 - **Endpoint:** `/api/v1/anon/placement/<handle/did>`
   - **Method:** `GET`
     - **Description:** Get the place that a user joined bluesky
@@ -541,7 +566,7 @@ Authenticated endpoints:
                     }
             }
 
-### 25.
+### 26.
 - **Endpoint:** `/api/v1/anon/starter-packs/<handle/did>` `/api/v1/anon/starter-packs/<handle/did>/<page:int>`
   - **Method:** `GET`
     - **Description:** Get the starter packs a user has made
@@ -566,7 +591,7 @@ Authenticated endpoints:
                     }
             }
         
-### 26.
+### 27.
 - **Endpoint:** `/api/v1/anon/starter-packs/total/<handle/did>`
   - **Method:** `GET`
     - **Description:** Get the total number of starter packs a user has made
@@ -581,7 +606,7 @@ Authenticated endpoints:
                     }
             }
         
-### 27.
+### 28.
 - **Endpoint:** `/api/v1/anon/single-starter-pack/<handle/did>` `/api/v1/anon/single-starter-pack/<handle/did>/<page:int>`
   - **Method:** `GET`
     - **Description:** Get the starter packs a user is on
@@ -606,7 +631,7 @@ Authenticated endpoints:
                     }
             }
         
-### 28.
+### 29.
 - **Endpoint:** `/api/v1/anon/single-starter-pack/total/<handle/did>`
   - **Method:** `GET`
     - **Description:** Get the total number of starter packs a user is on
