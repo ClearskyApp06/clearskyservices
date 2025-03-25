@@ -23,6 +23,15 @@ Anonymous endpoints:
 Authenticated endpoints:
 - **Limits:** 30 requests per second
 
+## Pagination
+
+- **Default:** 100 items per page
+
+
+  Example: `api.clearsky.services/api/v1/anon/blocklist/rudyfraser.com/2`
+
+
+
 ## Endpoints
 
 ### Anonymous:
