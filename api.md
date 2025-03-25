@@ -505,6 +505,122 @@ Authenticated endpoints:
                     }
             }
         
+### 23.
+- **Endpoint:** `/api/v1/anon/get-labelers` `/api/v1/anon/get-labelers/<page:int>`
+  - **Method:** `GET`
+    - **Description:** Get the active labelers
+    - **Parameters:** None
+      - **Response:**
+        ```json
+            {
+                "data": 
+                    [
+                        {
+                            "did": str,
+                            "endpoint": str,
+                            "name": str,
+                            "description": str,
+                            "created_date": timestamp
+                        }
+                    ]
+            }
+        
+### 24.
+- **Endpoint:** `/api/v1/anon/placement/<handle/did>`
+  - **Method:** `GET`
+    - **Description:** Get the place that a user joined bluesky
+    - **Parameters:** handle or did
+      - **Response:**
+        ```json
+            {
+                "identity": str, 
+                "status": bool, 
+                "data": 
+                    {
+                        "placement": int
+                    }
+            }
+
+### 25.
+- **Endpoint:** `/api/v1/anon/starter-packs/<handle/did>` `/api/v1/anon/starter-packs/<handle/did>/<page:int>`
+  - **Method:** `GET`
+    - **Description:** Get the starter packs a user has made
+    - **Parameters:** handle or did
+      - **Response:**
+        ```json
+            {
+                "identity": str, 
+                "status": bool, 
+                "data": 
+                    {
+                        "starter_packs": 
+                            [
+                                {
+                                    "name": str,
+                                    "description": str,
+                                    "did": str,
+                                    "created_date": timestamp,
+                                    "url": str,
+                                }
+                            ]
+                    }
+            }
+        
+### 26.
+- **Endpoint:** `/api/v1/anon/starter-packs/total/<handle/did>`
+  - **Method:** `GET`
+    - **Description:** Get the total number of starter packs a user has made
+    - **Parameters:** handle or did
+      - **Response:**
+        ```json
+            {
+                "identifier": str, 
+                "data": 
+                    {
+                        "count": int
+                    }
+            }
+        
+### 27.
+- **Endpoint:** `/api/v1/anon/single-starter-pack/<handle/did>` `/api/v1/anon/single-starter-pack/<handle/did>/<page:int>`
+  - **Method:** `GET`
+    - **Description:** Get the starter packs a user is on
+    - **Parameters:** handle or did
+      - **Response:**
+        ```json
+            {
+                "identity": str, 
+                "status": bool, 
+                "data": 
+                    {
+                        "starter_packs": 
+                            [
+                                {
+                                    "name": str,
+                                    "description": str,
+                                    "did": str,
+                                    "created_date": timestamp,
+                                    "url": str,
+                                }
+                            ]
+                    }
+            }
+        
+### 28.
+- **Endpoint:** `/api/v1/anon/single-starter-pack/total/<handle/did>`
+  - **Method:** `GET`
+    - **Description:** Get the total number of starter packs a user is on
+    - **Parameters:** handle or did
+      - **Response:**
+        ```json
+            {
+                "identifier": str, 
+                "data": 
+                    {
+                        "count": int
+                    }
+            }
+        
 ### Authenticated:
 
 For information about authenticated endpoints please contact us at [support@clearsky.app](mailto:support@clearsky.app)
