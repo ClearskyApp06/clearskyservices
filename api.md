@@ -424,7 +424,7 @@ Authenticated endpoints:
           
 ### 18.
 
-- **Endpoint:** `/api/v1/anon/subscribe-blocks-single-blocklist/users/<handle/did>` `/api/v1/anon/subscribe-blocks-single-blocklist/users/<handle/did>/<page:int>`
+- **Endpoint:** `/api/v1/anon/subscribe-blocks-single-blocklist/users/<URL>` `/api/v1/anon/subscribe-blocks-single-blocklist/users/<URL>/<page:int>`
   - **Method:** `GET`
     - **Description:** Get the list of users that a user is blocked by based on list subscriptions
       - **Parameters:** handle or did
