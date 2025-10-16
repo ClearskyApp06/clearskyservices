@@ -31,6 +31,14 @@ example:
     }
 }
 ```
+```json
+{
+    "status": 500,
+    "error_type": "InternalServerError",
+    "message": "An unexpected error occurred on the server.",
+    "details": "Failed to load record"
+}
+```
 
 
 ## Table of contents
