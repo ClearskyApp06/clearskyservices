@@ -3,12 +3,35 @@
 This Application provides raw and aggregated information from Bluesky using ATProto.
 
 ## Announcements
+Ongoing:
+- We are working to finalize v1 of the API, you may see changes as we update responses.
+- Some endpoints may be disabled.
 
-We are working to finalize v1 of the API, you may see changes as we update responses.
+10/16/2025:
 
-We have updated the doc to reflect the recent changes to responses and added new endpoints.
+We will be updating error responses very soon. The format will be changing to be more standardized.
 
-Some endpoints may be disabled.
+example:
+```json
+{
+    "status": 401,
+    "error_type": "Unauthorized",
+    "message": "Unauthorized: Authentication credentials are missing or invalid."
+}
+```
+```json
+{
+    "status": 401,
+    "error_type": "Unauthorized",
+    "message": "Unauthorized: Authentication credentials are missing or invalid.",
+    "details": {
+        "authenticated": false,
+        "identifier": "thieflord.dev",
+        "error": "Unauthorized"
+    }
+}
+```
+
 
 ## Table of contents
 
