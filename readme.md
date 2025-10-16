@@ -5,7 +5,7 @@ This Application provides raw and aggregated information from Bluesky using ATPr
 ## Announcements
 Ongoing:
 - We are working to finalize v1 of the API, you may see changes as we update responses.
-- Some endpoints may be disabled.
+- Some endpoints listed in this documentation may be disabled.
 
 10/16/2025:
 
