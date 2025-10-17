@@ -1,4 +1,4 @@
-# Clearsky Services
+# Clearsky Services API
 
 This Application provides raw and aggregated information from Bluesky using ATProto.
 
