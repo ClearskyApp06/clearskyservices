@@ -7,6 +7,7 @@ Ongoing:
 - We are working to finalize v1 of the API, you may see changes as we update responses.
   - NOTE: Some changes will be announced and others will not.
 - Some endpoints listed in this documentation may be disabled.
+- Validating error responses.
 
 10/16/2025:
 
@@ -40,6 +41,10 @@ example:
     "details": "Failed to load record"
 }
 ```
+
+10/18/2025:
+
+Error responses have been updated to the new format.
 
 ## Issues
 If you encounter any issues or have suggestions for improvements, please open an issue on our [GitHub repository](https://github.com/ClearskyApp06/clearskyservices/issues).
