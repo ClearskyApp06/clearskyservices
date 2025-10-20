@@ -46,8 +46,18 @@ example:
 
 Error responses have been updated to the new format.
 
+10/20/2025:
+
+We will be updating how pagination functions across the API. The changes will be as follows:
+- All endpoints that support pagination will now use a consistent approach with `limit` and `cursor` parameters.
+- The `limit` parameter will define the maximum number of items to return. For now, the maximum limit will be the default limit and cannot be increased.
+- The `cursor` parameter will be used to fetch the next set of results based on the last item of the previous response.
+- The response will include a `cursor` field if there are more results to fetch.
+- This change aims to simplify pagination and make it more predictable across all endpoints.
+- We will announce when these changes go live.
+
 ## Issues
-If you encounter any issues or have suggestions for improvements, please open an issue on our [GitHub repository](https://github.com/ClearskyApp06/clearskyservices/issues).
+If you encounter any issues or have suggestions for improvements, please open an issue ticket on our [GitHub repository](https://github.com/ClearskyApp06/clearskyservices/issues).
 
 ## Table of contents
 
