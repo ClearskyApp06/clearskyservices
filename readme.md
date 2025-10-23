@@ -56,6 +56,22 @@ We will be updating how pagination functions across the API. The changes will be
 - This change aims to simplify pagination and make it more predictable across all endpoints.
 - We will announce when these changes go live.
 
+10/23/2025:
+We will be updating how params are sent to the API. The changes will be as follows:
+- All endpoints will be converted to use query parameters for GET requests
+
+Example:
+
+Instead of:
+
+```GET /api/v1/anon/blocklist/{identifier}```
+
+We will use:
+
+```GET /api/v1/anon/blocklist?identifier={identifier}```
+
+This change will roll out with the new pagination changes.
+
 ## Issues
 If you encounter any issues or have suggestions for improvements, please open an issue ticket on our [GitHub repository](https://github.com/ClearskyApp06/clearskyservices/issues).
 
