@@ -100,18 +100,19 @@ Authenticated endpoints:
 
 #### 4.
 
-- **Endpoint:** `/api/v1/anon/validation/validate-handle/<handle>`
+- **Endpoint:** `/api/v1/anon/validation/validate`
   - **Method:** `GET`
-    - **Description:** Validate a handle
-    - **Parameters:** handle
+    - **Description:** Validate a handle or did
+    - **Parameters:** did or handle
       - **Response:**
           ```json
               {
                   "data": 
                       {
-                          "valid": bool
-                      }, 
-                  "identity": str
+                        "did": str,
+                        "handle": str,
+                        "status": bool,
+                        }
               }
   
 ### 5.
