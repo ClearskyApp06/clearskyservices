@@ -112,6 +112,7 @@ Authenticated endpoints:
                         "did": str,
                         "handle": str,
                         "status": bool,
+                        "valid": bool,
                         }
               }
   
