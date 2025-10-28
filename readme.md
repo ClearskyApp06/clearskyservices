@@ -72,6 +72,12 @@ We will use:
 
 This change will roll out with the new pagination changes.
 
+10/28/2025:
+
+A new API hostname will be introduced soon: `public.api.clearsky.services`
+
+Once the new hostname is live, both the existing and new hostnames will function simultaneously for a transition period, afterward, the old services will be unavailable. We will announce when the new hostname is live.
+
 ## Issues
 If you encounter any issues or have suggestions for improvements, please open an issue ticket on our [GitHub repository](https://github.com/ClearskyApp06/clearskyservices/issues).
 
