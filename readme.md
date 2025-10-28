@@ -3,13 +3,13 @@
 This Application provides raw and aggregated information from Bluesky using ATProto.
 
 ## Announcements
-Ongoing:
+**Ongoing**:
 - We are working to finalize v1 of the API, you may see changes as we update responses.
   - NOTE: Some changes will be announced and others will not.
 - Some endpoints listed in this documentation may be disabled.
 - Validating error responses.
 
-10/16/2025:
+**10/16/2025**:
 
 We will be updating error responses very soon. The format will be changing to be more standardized.
 
@@ -42,11 +42,11 @@ example:
 }
 ```
 
-10/18/2025:
+**10/18/2025**:
 
 Error responses have been updated to the new format.
 
-10/20/2025:
+**10/20/2025**:
 
 We will be updating how pagination functions across the API. The changes will be as follows:
 - All endpoints that support pagination will now use a consistent approach with `limit` and `cursor` parameters.
@@ -56,23 +56,24 @@ We will be updating how pagination functions across the API. The changes will be
 - This change aims to simplify pagination and make it more predictable across all endpoints.
 - We will announce when these changes go live.
 
-10/23/2025:
+**10/23/2025**:
+
 We will be updating how params are sent to the API. The changes will be as follows:
 - All endpoints will be converted to use query parameters for GET requests
 
 Example:
 
-Instead of:
-
-```GET /api/v1/anon/blocklist/{identifier}```
-
-We will use:
-
-```GET /api/v1/anon/blocklist?identifier={identifier}```
+    Old:
+    
+    ```GET /api/v1/anon/blocklist/{identifier}```
+    
+    New:
+    
+    ```GET /api/v1/anon/blocklist?identifier={identifier}```
 
 This change will roll out with the new pagination changes.
 
-10/28/2025:
+**10/28/2025**:
 
 A new API hostname will be introduced soon: `public.api.clearsky.services`
 
