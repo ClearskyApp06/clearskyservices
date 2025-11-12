@@ -1,6 +1,6 @@
 # API Documentation
 
-URL: `https://api.clearsky.services`
+URL: `https://public.api.clearsky.services`
 
 status: `https://status.clearsky.app`
 
