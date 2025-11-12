@@ -28,7 +28,7 @@ Authenticated endpoints:
 - **Default:** 100 items per page
 
 
-  Example: `api.clearsky.services/api/v1/anon/blocklist/rudyfraser.com/2`
+  Example: `public.api.clearsky.services/api/v1/anon/blocklist/rudyfraser.com/2`
 
 
 
