@@ -9,7 +9,7 @@ If you encounter any issues or have suggestions for improvements, please open an
 ## Table of contents
 
 - [v2 Usage](API_v2.md)
-- [v2 Usage](API_v1.md)
+- [v1 Usage](API_v1.md)
 
 ## Usage
 
@@ -105,4 +105,3 @@ The new hostname `public.api.clearsky.services` is now live! You can start using
 - v2 contains the new pagination and query params implementation. 
 - v1 will remain available to use until 06/01/2026.
 - We will be publishing the v2 documentation very soon.
-
