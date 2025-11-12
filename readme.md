@@ -1,11 +1,25 @@
 # Clearsky Services API
 
-This Application provides raw and aggregated information from Bluesky using ATProto.
+This service provides raw and aggregated information from Bluesky using ATProto.
+
+## Issues
+
+If you encounter any issues or have suggestions for improvements, please open an issue ticket on our [GitHub repository](https://github.com/ClearskyApp06/clearskyservices/issues).
+
+## Table of contents
+
+- [Usage](API_v2.md)
+
+## Usage
+
+See the [API Documentation](API_v2.md) for more information on the available endpoints.
+
 
 ## Announcements
+
 **Ongoing**:
-- We are working to finalize v1 of the API, you may see changes as we update responses.
-  - NOTE: Some changes will be announced and others will not.
+- We are working to finalize v2 of the API, you may see changes as we update responses.
+  - NOTE: Some changes will be announced before implemented and others will not.
 - Some endpoints listed in this documentation may be disabled.
 - Validating error responses.
 
@@ -91,13 +105,3 @@ The new hostname `public.api.clearsky.services` is now live! You can start using
 - v1 will remain available to use until 06/01/2026.
 - We will be publishing the v2 documentation very soon.
 
-## Issues
-If you encounter any issues or have suggestions for improvements, please open an issue ticket on our [GitHub repository](https://github.com/ClearskyApp06/clearskyservices/issues).
-
-## Table of contents
-
-- [Usage](api.md)
-
-## Usage
-
-See the [API Documentation](API_v2.md) for more information on the available endpoints.
