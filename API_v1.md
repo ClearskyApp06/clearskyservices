@@ -1,4 +1,4 @@
-# API Documentation
+# V1 API Documentation
 
 URL: `https://public.api.clearsky.services`
 
