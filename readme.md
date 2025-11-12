@@ -8,11 +8,12 @@ If you encounter any issues or have suggestions for improvements, please open an
 
 ## Table of contents
 
-- [Usage](API_v2.md)
+- [v2 Usage](API_v2.md)
+- [v2 Usage](API_v1.md)
 
 ## Usage
 
-See the [API Documentation](API_v2.md) for more information on the available endpoints.
+See the [latest API Documentation](API_v2.md) for more information on the available endpoints.
 
 
 ## Announcements
