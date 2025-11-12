@@ -85,7 +85,12 @@ The new hostname `public.api.clearsky.services` is now live! You can start using
 
 **11/12/2025**:
 
-V1 and V2 of the API are now available. V2 contains the new pagination and query params implementation. V1 will remain available to use until 06/01/2026.
+- v1 of the API has been finalized.
+
+- v2 will be available to use soon. 
+
+- v2 contains the new pagination and query params implementation. 
+- v1 will remain available to use until 06/01/2026.
 
 ## Issues
 If you encounter any issues or have suggestions for improvements, please open an issue ticket on our [GitHub repository](https://github.com/ClearskyApp06/clearskyservices/issues).
