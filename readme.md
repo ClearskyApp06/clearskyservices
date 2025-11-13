@@ -24,6 +24,55 @@ See the [latest API Documentation](API_v2.md) for more information on the availa
 - Some endpoints listed in this documentation may be disabled.
 - Validating error responses.
 
+**11/12/2025**:
+
+- v1 of the API has been finalized.
+- v2 will be available to use soon.
+- v2 contains the new pagination and query params implementation. 
+- v1 will remain available to use until 06/01/2026.
+- We will be publishing the v2 documentation very soon.
+
+**11/1/2025**:
+
+The new hostname `public.api.clearsky.services` is now live! You can start using it right away. To allow for a smooth transition, the old hostname will remain functional for 2 weeks, until 11/16/2025 at 6pm pacific time.
+
+**10/28/2025**:
+
+A new API hostname will be introduced soon: `public.api.clearsky.services`
+
+Once the new hostname is live, both the existing and new hostnames will function simultaneously for a transition period, afterward, the old services will be unavailable. We will announce when the new hostname is live.
+
+**10/23/2025**:
+
+We will be updating how params are sent to the API. The changes will be as follows:
+- All endpoints will be converted to use query parameters for GET requests
+
+Example:
+
+    Old:
+    
+    ```GET /api/v1/anon/blocklist/{identifier}```
+    
+    New:
+    
+    ```GET /api/v1/anon/blocklist?identifier={identifier}```
+
+This change will roll out with the new pagination changes.
+
+**10/20/2025**:
+
+We will be updating how pagination functions across the API. The changes will be as follows:
+- All endpoints that support pagination will now use a consistent approach with `limit` and `cursor` parameters.
+- The `limit` parameter will define the maximum number of items to return. For now, the maximum limit will be the default limit and cannot be increased.
+- The `cursor` parameter will be used to fetch the next set of results based on the last item of the previous response.
+- The response will include a `cursor` field if there are more results to fetch.
+- This change aims to simplify pagination and make it more predictable across all endpoints.
+- We will announce when these changes go live.
+
+**10/18/2025**:
+
+Error responses have been updated to the new format.
+
 **10/16/2025**:
 
 We will be updating error responses very soon. The format will be changing to be more standardized.
@@ -56,52 +105,3 @@ example:
     "details": "Failed to load record"
 }
 ```
-
-**10/18/2025**:
-
-Error responses have been updated to the new format.
-
-**10/20/2025**:
-
-We will be updating how pagination functions across the API. The changes will be as follows:
-- All endpoints that support pagination will now use a consistent approach with `limit` and `cursor` parameters.
-- The `limit` parameter will define the maximum number of items to return. For now, the maximum limit will be the default limit and cannot be increased.
-- The `cursor` parameter will be used to fetch the next set of results based on the last item of the previous response.
-- The response will include a `cursor` field if there are more results to fetch.
-- This change aims to simplify pagination and make it more predictable across all endpoints.
-- We will announce when these changes go live.
-
-**10/23/2025**:
-
-We will be updating how params are sent to the API. The changes will be as follows:
-- All endpoints will be converted to use query parameters for GET requests
-
-Example:
-
-    Old:
-    
-    ```GET /api/v1/anon/blocklist/{identifier}```
-    
-    New:
-    
-    ```GET /api/v1/anon/blocklist?identifier={identifier}```
-
-This change will roll out with the new pagination changes.
-
-**10/28/2025**:
-
-A new API hostname will be introduced soon: `public.api.clearsky.services`
-
-Once the new hostname is live, both the existing and new hostnames will function simultaneously for a transition period, afterward, the old services will be unavailable. We will announce when the new hostname is live.
-
-**11/1/2025**:
-
-The new hostname `public.api.clearsky.services` is now live! You can start using it right away. To allow for a smooth transition, the old hostname will remain functional for 2 weeks, until 11/16/2025 at 6pm pacific time.
-
-**11/12/2025**:
-
-- v1 of the API has been finalized.
-- v2 will be available to use soon.
-- v2 contains the new pagination and query params implementation. 
-- v1 will remain available to use until 06/01/2026.
-- We will be publishing the v2 documentation very soon.
