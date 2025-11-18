@@ -4,6 +4,9 @@ URL: `https://public.api.clearsky.services`
 
 status: `https://status.clearsky.app`
 
+To view how far behind the current data is from real time, you can go here: `https://data.clearsky.app`
+or you can use the endpoint `/api/v1/anon/status/time-behind`
+
 ## Response Errors
 - **400:** Bad Request
 - **404:** Not Found
